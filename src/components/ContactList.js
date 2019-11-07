@@ -20,7 +20,18 @@ const List = [
     avatar:"https://randomuser.me/api/portraits/men/96.jpg",
     online: false,
 }
-
+,
+{
+    name: "La puipui frero",
+    avatar:"https://randomuser.me/api/portraits/men/96.jpg",
+    online: false,
+}
+,
+{
+    name: "La puipui frero",
+    avatar:"https://randomuser.me/api/portraits/men/96.jpg",
+    online: false,
+}
 ]
 
 
