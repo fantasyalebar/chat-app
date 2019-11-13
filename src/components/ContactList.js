@@ -1,50 +1,54 @@
 import React from "react";
-import Contact from "./Contact"
+import Contact from "./Contact";
 
-const List = [
-
-{
+const list = [
+  {
     name: "La puipui frero",
-    avatar:"https://randomuser.me/api/portraits/men/96.jpg",
+    avatar: "https://randomuser.me/api/portraits/men/11.jpg",
     online: false,
-}
-,
-{
+    id: 1
+  },
+  {
     name: "La puipui frero",
-    avatar:"https://randomuser.me/api/portraits/men/96.jpg",
+    avatar: "https://randomuser.me/api/portraits/men/17.jpg",
     online: true,
-}
-,
-{
+    id: 2
+  },
+  {
     name: "La puipui frero",
-    avatar:"https://randomuser.me/api/portraits/men/96.jpg",
+    avatar: "https://randomuser.me/api/portraits/men/42.jpg",
     online: false,
-}
-,
-{
+    id: 3
+  },
+  {
     name: "La puipui frero",
-    avatar:"https://randomuser.me/api/portraits/men/96.jpg",
+    avatar: "https://randomuser.me/api/portraits/men/12.jpg",
     online: false,
-}
-,
-{
+    id: 4
+  },
+  {
     name: "La puipui frero",
-    avatar:"https://randomuser.me/api/portraits/men/96.jpg",
-    online: false,
-}
-]
+    avatar: "https://randomuser.me/api/portraits/men/16.jpg",
+    online: true,
+    id: 5
+  }
+];
 
+console.log(list);
 
 const ContactList = () => (
-    <div>
-        {List.map(item => ( 
-            <Contact online={item.online} avatar={item.avatar} character={item.name}/>
-        )
-        )}
-        
-
-    </div>
+    list.map(item => (
+			
+      <Contact
+        online={item.online}
+        avatar={item.avatar}
+        name={item.name}
+				key={item.id}
+				
+      />
+		))
 )
 
+console.log('tata', ContactList());
 
 export default ContactList;
